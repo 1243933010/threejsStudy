@@ -10,7 +10,8 @@ const router = createRouter({
       path: '/',
       name: 'home',
       // component: HomeView
-      component: () => import('../views/Three.vue')
+      // component: () => import('../views/Three.vue')
+      component: () => import('../views/Threejs1.vue')
 
     },
     {
