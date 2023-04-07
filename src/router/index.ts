@@ -12,7 +12,9 @@ const router = createRouter({
       // component: HomeView
       // component: () => import('../views/Three.vue')
       // component: () => import('../views/Threejs1.vue')
-      component: () => import('../views/Threejs2.vue')
+      // component: () => import('../views/Threejs2.vue')
+      // component: () => import('../views/Scene.vue')
+      component: () => import('../views/Material.vue')
 
 
     },
