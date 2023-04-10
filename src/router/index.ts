@@ -14,7 +14,10 @@ const router = createRouter({
       // component: () => import('../views/Threejs1.vue')
       // component: () => import('../views/Threejs2.vue')
       // component: () => import('../views/Scene.vue')
-      component: () => import('../views/Material.vue')
+      // component: () => import('../views/Material.vue')
+      // component: () => import('../views/Vein.vue')
+      component: () => import('../views/Beam.vue')
+
 
 
     },

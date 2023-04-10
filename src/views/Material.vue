@@ -33,9 +33,9 @@ onMounted(() => {
     const detail = 5;
 
     const geometry = new THREE.DodecahedronGeometry(radius, detail);
-    // const material = new THREE.MeshPhongMaterial({ color: 0x00FFFF });
+    const material = new THREE.MeshPhongMaterial({ color: 0x00FFFF });
     // const material = new THREE.MeshBasicMaterial({ color: 0x00FFFF });
-    const material = new THREE.MeshLambertMaterial({ color: 0x00FFFF });
+    // const material = new THREE.MeshLambertMaterial({ color: 0x00FFFF });
     // const material = new THREE.MeshToonMaterial({ color: 0x00FFFF });
 
     const cube = new THREE.Mesh(geometry, material);
