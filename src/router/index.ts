@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import HomeView from '../views/HomeView.vue'
+import HomeView from '../views/HomeView.vue'
 // import TableList from '../views/tableList.vue';
 // import Login from '../views/Login.vue'
 console.log(import.meta.env.BASE_URL,'====')
@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      // component: HomeView
+      component: HomeView
       // component: () => import('../views/Three.vue')
       // component: () => import('../views/Threejs1.vue')
       // component: () => import('../views/Threejs2.vue')
@@ -20,7 +20,7 @@ const router = createRouter({
       // component: () => import('../views/Camera.vue')  //没跑起来
       // component: () => import('../views/Shadow.vue')
       // component: () => import('../views/Background.vue')
-      component: () => import('../views/MoreScene.vue')
+      // component: () => import('../views/MoreScene.vue')
 
 
 
