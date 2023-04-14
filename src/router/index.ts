@@ -9,7 +9,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      // component: HomeView
       // component: () => import('../views/Three.vue')
       // component: () => import('../views/Threejs1.vue')
       // component: () => import('../views/Threejs2.vue')
@@ -21,6 +21,7 @@ const router = createRouter({
       // component: () => import('../views/Shadow.vue')
       // component: () => import('../views/Background.vue')
       // component: () => import('../views/MoreScene.vue')
+      component: () => import('../views/CustomPage.vue')
 
 
 

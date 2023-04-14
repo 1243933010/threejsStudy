@@ -1,7 +1,7 @@
 
 
 <template>
-<Jsx msg="111" />
+<Jsx :message="'sss'"   />
   <main class="pb-10 bg-danger">
 <div class="box-border fixed z-10 w-screen pt-6 pl-3 pr-3 bg-gradient-to-r from-primary to-secondary">
   <div class="flex items-center mb-3 row">
@@ -131,12 +131,12 @@
 </template>
 
 <script setup lang="ts">
-import { reactive,ref } from 'vue';
+import { reactive,ref ,} from 'vue';
 import TheWelcome from '../components/TheWelcome.vue'
-import Jsx from '../components/Jsx.jsx'
+import Jsx from '../components/Jsx.vue'
 import axios from 'axios';
 let tabList:string[] = reactive(['起步','文档','下载','联系','练习','更新']);
-
+const prop = defineProps();
 const codeUlr = ref<string>('http://localhost:3002/v1/user/verification')
 const imgUrl = ()=>codeUlr.value ='http://localhost:3002/v1/user/verification'+'?'+Math.random();
 const text = ref<string>('');
