@@ -10,7 +10,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
 onMounted(() => {
     const canvas = document.querySelector('#custom')
-    const renderer = new THREE.WebGLRenderer();
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth,window.innerHeight)
     canvas?.appendChild(renderer.domElement)
 
@@ -26,10 +26,17 @@ onMounted(() => {
     '/pos-z.jpg', '/neg-z.jpg',
     ])
     scene.background=  texture;
+    // renderer.toneMappingExposure = 3.0;
+    const color = 0xFFFFFF;
+    const intensity = 1;
+    const light = new THREE.DirectionalLight(color, intensity);
+    light.position.set(-100, 200, 40);
+    light.target.position.set(-5, 0, 0);
+    scene.add(light);
 
     const loader = new GLTFLoader();
-    // loader.setPath('skull_salazar_downloadable/');
-    loader.load('111.glb',(gltf)=>{
+    loader.setPath('free_1975_porsche_911_930_turbo/');
+    loader.load('scene.gltf',(gltf)=>{
         console.log('11111',gltf)
         gltf.scene.traverse( function ( child ) {
     if ( child.isMesh ) {
