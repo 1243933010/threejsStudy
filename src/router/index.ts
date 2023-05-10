@@ -19,9 +19,9 @@ const router = createRouter({
       // component: () => import('../views/Beam.vue')
       // component: () => import('../views/Camera.vue')  //没跑起来
       // component: () => import('../views/Shadow.vue')
-      // component: () => import('../views/Background.vue')
+      component: () => import('../views/Background.vue')
       // component: () => import('../views/MoreScene.vue')
-      component: () => import('../views/CustomPage.vue')
+      // component: () => import('../views/CustomPage.vue')
 
 
 
